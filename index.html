@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buy and Sell</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: keeps the background fixed while scrolling */
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .text-section {
+    text-align: center;
+    margin-top: 83px;
+  }
+  .text-section h1 {
+    font-size: 36px;
+    color: #333;
+  }
+
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .text-section h1 {
+      font-size: 28px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .text-section h1 {
+      font-size: 24px;
+    }
+  }
+
+  .container1 {
+
+    height: 18vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 15px 50px;
+    margin: 10px;
+    font-size: 20px;
+    background-color: #33900e;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+  }
+
+  .button:hover {
+    background-color: #45a049;
+  }
+
+  .button-sell {
+    background-color: #f44336;
+  }
+
+  .button-sell:hover {
+    background-color: #d32f2f;
+  }
+  h2{
+   background-color: rgb(84, 10, 163);
+    color:white; 
+    font-family: Arial, sans-serif; 
+    font-size: 24px; 
+    padding: 10px; 
+    border-radius: 5px; 
+  }
+
+  header {
+  background-color: #0f022d;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img {
+  height: 40px; /* Adjust size as needed */
+}
+
+
+@keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  /* Apply the animation to the text */
+  .animated-text {
+    animation: fadeInOut 2s ease-in-out infinite;
+  }
+  h3{
+    color: rgb(255, 253, 157);
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1e0850;
+  }
+
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+      
+  </header>
+
+  <div class="container">
+    <div class="text-section">
+      <h2 class="animated-text">Welcome in My Website ! Buy And Sell Old Phone</h2> 
+      <h3>Phones Becho Ghar Baithe Baithe  </h3>
+    </div>
+    
+
+<div class="container1">
+  <a href="formbuy.html" class="button">Buy</a>
+  <a href="formsell.html" class="button button-sell">Sell</a>
+</div>
+
+</body>
+</html>
